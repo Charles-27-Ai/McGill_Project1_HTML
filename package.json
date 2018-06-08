@@ -1,0 +1,29 @@
+{
+  "name": "mcgill_project1",
+  "version": "1.0.0",
+  "description": "Red Nova Edu Engine",
+  "main": "index.js",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomatocake7270/McGill_Project1.git"
+  },
+  "keywords": [
+    "Educational",
+    "Technology",
+    "Search",
+    "Engine"
+  ],
+  "author": "Charles Ai",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tomatocake7270/McGill_Project1/issues"
+  },
+  "homepage": "https://github.com/tomatocake7270/McGill_Project1#readme"
+}

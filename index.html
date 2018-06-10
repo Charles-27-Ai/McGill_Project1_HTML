@@ -1,52 +1,204 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<title>Red Nova Edu Engine</title>
+
 	<!-- Personal CSS JS-->
-    <link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="js/java.js" type="text/javascript" charset="utf-8" async defer></script>
-	<!-- jQuery -->
-	<script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
-
-	<!-- Bootstrap -->
-	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-    
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
-
+	<!-- font-awesome-->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+	    crossorigin="anonymous">
 
 </head>
+
 <body>
 	<header>
-				
+		<nav class="navbar navbar-expand-lg">
+			<div class="container navbar-container">
+				<a class="navbar-brand" href="#">
+					<img class="navbar-img" src="img/project-logo.png" alt="Red Nova Edu Tech">
+					<span class="navbar-text">Red Nova Engine</span>
+				</a>
+
+				<button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+					<span class="navbar-toggler-icon">
+						<img src="img/hamburger.png" alt="hamburger" class="navbar-toggler-icon-img">
+					</span>
+				</button>
+				<!-- nav buttons -->
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<ul class="navbar-nav justify-content-center">
+						<!-- Schools -->
+						<li class="nav-item dropdown nav-item-schools">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+								<img src="img/school-logo-1.png" alt="Schools" class="nav-img"> Education
+							</a>
+							<!-- dropdown for small screens -->
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Post-secondary</a>
+								<a href="#" class="dropdown-item">Secondary</a>
+								<a href="#" class="dropdown-item">Elementary</a>
+								<a href="#" class="dropdown-item">Early childhood</a>
+							</div>
+							<!-- dropdown for large screens -->
+							<div class="nav-dropdown" id="schools-dropdown">
+								<ul class="nav-dropdown-ul">
+									<li class="nav-dropdown-li">Post-secondary</li>
+									<li class="nav-dropdown-li">Secondary</li>
+									<li class="nav-dropdown-li">Elementary</li>
+									<li class="nav-dropdown-li">Early childhood</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Users -->
+						<li class="nav-item dropdown nav-item-users">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+								<img src="img/users-logo-1.png" alt="Users" class="nav-img"> Users
+							</a>
+							<!-- dropdown for small screens -->
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Teachers</a>
+								<a href="#" class="dropdown-item">Students</a>
+								<a href="#" class="dropdown-item">administrators</a>
+							</div>
+							<!-- dropdown for large screens -->
+							<div class="nav-dropdown" id="users-dropdown">
+								<ul class="nav-dropdown-ul">
+									<li class="nav-dropdown-li">Teachers</li>
+									<li class="nav-dropdown-li">Students</li>
+									<li class="nav-dropdown-li">administrators</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Platforms -->
+						<li class="nav-item dropdown nav-item-platforms">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+								<img src="img/platforms-logo-1.png" alt="Platforms" class="nav-img"> Platforms
+							</a>
+							<!-- dropdown for small screens -->
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">Web Apps</a>
+								<a href="#" class="dropdown-item">iOS (iPhone iPad)</a>
+								<a href="#" class="dropdown-item">macOS (Macintosh)</a>
+							</div>
+							<!-- dropdown for large screens -->
+							<div class="nav-dropdown" id="platforms-dropdown">
+								<ul class="nav-dropdown-ul">
+									<li class="nav-dropdown-li">Web Apps</li>
+									<li class="nav-dropdown-li">iOS (iPhone iPad)</li>
+									<li class="nav-dropdown-li">macOS (Macintosh)</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Categories -->
+						<li class="nav-item dropdown nav-item-cats">
+							<a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+								<img src="img/categories-logo-1.png" alt="Categories" class="nav-img"> Categories
+							</a>
+							<!-- dropdown for small screens -->
+							<div class="dropdown-menu">
+								<a href="#" class="dropdown-item">My favourite techs</a>
+								<a href="#" class="dropdown-item">Trending new tools</a>
+								<a href="#" class="dropdown-item">Appealing widgets</a>
+							</div>
+							<!-- dropdown for large screens -->
+							<div class="nav-dropdown" id="cats-dropdown">
+								<ul class="nav-dropdown-ul">
+									<li class="nav-dropdown-li">My favourite techs</li>
+									<li class="nav-dropdown-li">Trending new tools</li>
+									<li class="nav-dropdown-li">Appealing widgets</li>
+								</ul>
+							</div>
+						</li>
+						<!-- Keywords-->
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link">
+								<img src="img/keywords-logo-1.png" alt="Keywords" class="nav-img"> Keywords
+							</a>
+						</li>
+						<!-- About -->
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link">
+								<img src="img/about-logo-1.png" alt="About" class="nav-img"> About
+							</a>
+						</li>
+						<!-- Sign up / Log in -->
+						<li class="nav-item dropdown nav-item-sign">
+							<a href="#" class="nav-link nav-link-sign dropdown-toggle" data-toggle="dropdown">
+								<img src="img/account-logo-1.png" alt="SignUp/LogIn" class="nav-img">
+								<p>Log in / Sign Up</p>
+							</a>
+							<!-- dropdown for small screens -->
+							<div class="dropdown-menu">
+								<form class="dropdown-item dropdown-menu-form">
+									<div class="form-group dropdown-menu-form-group">
+										<input type="email" id="email" class="form-control form-control-sm" placeholder="Email address">
+									</div>
+									<div class="form-group dropdown-menu-form-group">
+										<input type="password" id="password" class="form-control form-control-sm" placeholder="Password">
+									</div>
+									<div class="container dropdown-menu-form-group-container">
+										<button type="submit" class="btn btn-secondary">Log in</button>
+										<a href="#">Sign up</a>
+									</div>
+								</form>
+							</div>
+							<!-- dropdown for large screens -->
+							<div class="nav-dropdown" id="sign-dropdown">
+								<form class="nav-dropdown-form">
+									<div class="form-group nav-dropdown-form-group">
+										<input type="email" id="email" class="form-control form-control-sm" placeholder="Email address">
+									</div>
+									<div class="form-group nav-dropdown-form-group">
+										<input type="password" id="password" class="form-control form-control-sm" placeholder="Password">
+									</div>
+									<div class="container nav-dropdown-form-group-container">
+										<button type="submit" class="btn btn-secondary">Log in</button>
+										<a href="#">Sign up</a>
+									</div>
+								</form>
+							</div>
+						</li>
+						<li class="nav-item dropdown">
+							<a href="#" class="nav-link">
+								<img src="img/flag-uk.png" alt="English" class="nav-img">
+							</a>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- jQ dropdown -->
+
+
 	</header>
-	<div class="container">
-		<h1 class="mt-3">Charles Ai's personal website</h1>
-		<h2 class="mb-2">This would be fun!</h2>
-		<h3 class="text-primary">Do you wanna give it a shot?</h3>	
-	</div>
-	
+
+	<!-- big search bar -->
+	<section id="intro" class="section_intro">
+
+	</section>
+
 </body>
 
 <script>
-	$(document).ready(function() {
-		$("h3").mouseover(function() {
-			/* Act on the event */
-			$(this).css("font-size","1.5em");
-		});
-		$("h3").mouseout(function() {
-			$(this).css("font-size","2em");
-		});
-	});
+	// $(document).ready(function () {
+
+	// $("#dropdown").click(function(){
+	// 		$("#drop").toggle(1000);
+	// });
+
+
+	// });
 </script>
 
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 
 </html>
-
-
-

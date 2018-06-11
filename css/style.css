@@ -6302,7 +6302,7 @@ header {
   width: 100%;
   height: 9rem;
   background-color: rgba(255, 201, 82, 0.33); }
-  @media screen and (max-width: 992px) {
+  @media (max-width: 992px) {
     .navbar {
       height: 100vh; } }
   .navbar-container {
@@ -6409,7 +6409,7 @@ header {
 .nav-item:last-child:hover {
   background-color: transparent; }
 
-@media screen and (min-width: 992px) {
+@media (max-width: 992px) {
   .nav-item-schools:hover #schools-dropdown {
     display: block;
     position: absolute; }
@@ -6467,7 +6467,7 @@ header {
   padding: .5rem 0;
   line-height: 2.6rem;
   display: inline-block; }
-  @media screen and (min-width: 992px) {
+  @media (max-width: 992px) {
     .dropdown-item {
       display: none; } }
   .dropdown-item:hover {
@@ -6537,7 +6537,7 @@ footer {
   width: 100rem;
   margin: 0 auto;
   margin-top: 1.5rem; }
-  @media screen and (max-width: 992px) {
+  @media (max-width: 992px) {
     .footer-row {
       width: 90%; } }
   .footer-row-1 {
@@ -6551,9 +6551,16 @@ footer {
     margin-bottom: 1rem; }
   .footer-row-2-col-right {
     text-align: center;
-    padding-left: 3rem; }
+    padding-left: 3rem;
+    font-size: 1.4rem; }
+    @media (max-width: 992px) {
+      .footer-row-2-col-right {
+        font-size: 1rem; } }
     .footer-row-2-col-right p {
       margin-left: -3rem; }
+      @media (max-width: 992px) {
+        .footer-row-2-col-right p {
+          margin-left: -2rem; } }
   .footer-row-media-img {
     width: 7.5rem;
     position: relative;
@@ -6568,10 +6575,12 @@ footer {
       .footer-row-sn-img img {
         width: 3.5rem; }
   .footer-row-links {
-    font-size: 1.4rem;
     text-decoration: none; }
     .footer-row-links-item {
       margin: .8rem 4rem 1.25rem 0; }
+      @media (max-width: 992px) {
+        .footer-row-links-item {
+          margin-right: 2rem; } }
       .footer-row-links-item a {
         color: #FE4282; }
 

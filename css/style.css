@@ -6547,10 +6547,33 @@ footer {
       margin: 0 auto; }
       .footer-row-1-col-right {
         padding-left: 3rem; }
+  .footer-row-2-col-left {
+    margin-bottom: 1rem; }
+  .footer-row-2-col-right {
+    text-align: center;
+    padding-left: 3rem; }
+    .footer-row-2-col-right p {
+      margin-left: -3rem; }
   .footer-row-media-img {
     width: 7.5rem;
     position: relative;
     clip-path: circle(50% at 50% 50%); }
+  .footer-row-media-body p {
+    width: inherit; }
+  .footer-row-sn {
+    margin: 0 1.5rem;
+    margin-top: 1.5rem; }
+    .footer-row-sn-img {
+      display: inline-block; }
+      .footer-row-sn-img img {
+        width: 3.5rem; }
+  .footer-row-links {
+    font-size: 1.4rem;
+    text-decoration: none; }
+    .footer-row-links-item {
+      margin: .8rem 4rem 1.25rem 0; }
+      .footer-row-links-item a {
+        color: #FE4282; }
 
 .footer-form {
   height: 3.5rem;

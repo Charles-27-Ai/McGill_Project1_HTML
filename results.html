@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red Nova Edu Engine</title>
+
+    <!-- Personal CSS JS-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/java.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- font-awesome-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-img" src="img/project-logo.png" alt="Red Nova Edu Tech">
+                    <span class="navbar-text">Red Nova Engine</span>
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+                        <img src="img/hamburger.png" alt="hamburger" class="navbar-toggler-icon-img">
+                    </span>
+                </button>
+                <!-- nav buttons -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center">
+                        <!-- Schools -->
+                        <li class="nav-item dropdown nav-item-schools">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/school-logo-1.png" alt="Schools" class="nav-img"> Education
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Post-secondary</a>
+                                <a href="#" class="dropdown-item">Secondary</a>
+                                <a href="#" class="dropdown-item">Elementary</a>
+                                <a href="#" class="dropdown-item">Early childhood</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="schools-dropdown">
+                                <ul class="nav-dropdown-ul list-inline">
+                                    <li class="nav-dropdown-li">Post-secondary</li>
+                                    <li class="nav-dropdown-li">Secondary</li>
+                                    <li class="nav-dropdown-li">Elementary</li>
+                                    <li class="nav-dropdown-li">Early childhood</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Users -->
+                        <li class="nav-item dropdown nav-item-users">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/users-logo-1.png" alt="Users" class="nav-img"> Users
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Teachers</a>
+                                <a href="#" class="dropdown-item">Students</a>
+                                <a href="#" class="dropdown-item">administrators</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="users-dropdown">
+                                <ul class="nav-dropdown-ul">
+                                    <li class="nav-dropdown-li">Teachers</li>
+                                    <li class="nav-dropdown-li">Students</li>
+                                    <li class="nav-dropdown-li">administrators</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Platforms -->
+                        <li class="nav-item dropdown nav-item-platforms">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/platforms-logo-1.png" alt="Platforms" class="nav-img"> Platforms
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Web Apps</a>
+                                <a href="#" class="dropdown-item">iOS (iPhone iPad)</a>
+                                <a href="#" class="dropdown-item">macOS (Macintosh)</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="platforms-dropdown">
+                                <ul class="nav-dropdown-ul">
+                                    <li class="nav-dropdown-li">Web Apps</li>
+                                    <li class="nav-dropdown-li">iOS (iPhone iPad)</li>
+                                    <li class="nav-dropdown-li">macOS (Macintosh)</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Categories -->
+                        <li class="nav-item dropdown nav-item-cats">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/categories-logo-1.png" alt="Categories" class="nav-img"> Categories
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">My favourite techs</a>
+                                <a href="#" class="dropdown-item">Trending new tools</a>
+                                <a href="#" class="dropdown-item">Appealing widgets</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="cats-dropdown">
+                                <ul class="nav-dropdown-ul">
+                                    <li class="nav-dropdown-li">My favourite techs</li>
+                                    <li class="nav-dropdown-li">Trending new tools</li>
+                                    <li class="nav-dropdown-li">Appealing widgets</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Keywords-->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">
+                                <img src="img/keywords-logo-1.png" alt="Keywords" class="nav-img"> Keywords
+                            </a>
+                        </li>
+                        <!-- About -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">
+                                <img src="img/about-logo-1.png" alt="About" class="nav-img"> About
+                            </a>
+                        </li>
+                        <!-- Sign up / Log in -->
+                        <li class="nav-item dropdown nav-item-sign">
+                            <a href="#" class="nav-link nav-link-sign dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/account-logo-1.png" alt="SignUp/LogIn" class="nav-img">
+                                <p>Log in / Sign Up</p>
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <form class="dropdown-item dropdown-menu-form">
+                                    <div class="form-group dropdown-menu-form-group">
+                                        <input type="email" id="email" class="form-control form-control-sm" placeholder="Email address">
+                                    </div>
+                                    <div class="form-group dropdown-menu-form-group">
+                                        <input type="password" id="password" class="form-control form-control-sm" placeholder="Password">
+                                    </div>
+                                    <div class="container dropdown-menu-form-group-container">
+                                        <button type="submit" class="btn btn-secondary">Log in</button>
+                                        <a href="#">Sign up</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="sign-dropdown">
+                                <form class="nav-dropdown-form">
+                                    <div class="form-group nav-dropdown-form-group">
+                                        <input type="email" id="email" class="form-control form-control-sm" placeholder="Email address">
+                                    </div>
+                                    <div class="form-group nav-dropdown-form-group">
+                                        <input type="password" id="password" class="form-control form-control-sm" placeholder="Password">
+                                    </div>
+                                    <div class="container nav-dropdown-form-group-container">
+                                        <button type="submit" class="btn btn-secondary">Log in</button>
+                                        <a href="#">Sign up</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">
+                                <img src="img/flag-uk.png" alt="English" class="nav-img">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="section d-flex flex-row justify-content-center">
+        <!-- left part: two components -->
+        <div class="d-flex flex-column section-left">
+            <div class="d-flex flex-column section-left-cats">
+                <h2>Categories</h2>
+                <ul>
+                    <li>My favourite tools</li>
+                    <li>Trending Ed Tech</li>
+                    <li>Appealing widgets</li>
+                </ul>
+                <p>Recommendations &amp; suggestions</p>
+            </div>
+            <div class="d-flex flex-column section-left-keys">
+                <!-- Education --> 
+                <div class="section-left-keys-block">                    
+                    <h3 class="section-left-keys-cat" id="cat-edu"><span id="fig-edu"> +  </span>Education</h3>
+                    <ul class="section-left-keys-ul" id="ul-edu">
+                        <li>Post-secondary <span>(3)</span></li>
+                        <li>Secondary <span>(3)</span></li>
+                        <li>Elementary <span>(3)</span></li>
+                        <li>Early childhood <span>(3)</span></li>
+                    </ul>
+                </div>
+                <!-- Payment models --> 
+                <div class="section-left-keys-block">                    
+                    <h3 class="section-left-keys-cat" id="cat-pay"><span id="fig-pay"> + </span>Payment models</h3>
+                    <ul class="section-left-keys-ul" id="ul-pay">
+                        <li>Totally free <span>(3)</span></li>
+                        <li>Buyout with free trial <span>(3)</span></li>
+                        <li>Subscription <span>(3)</span></li>
+                    </ul>
+                </div>
+                <!-- Platforms --> 
+                <div class="section-left-keys-block">                    
+                    <h3 class="section-left-keys-cat" id="cat-platform"><span id="fig-platform"> + </span>Platforms</h3>
+                    <ul class="section-left-keys-ul" id="ul-platform">
+                        <li>Website based <span>(3)</span></li>
+                        <li>iOS (iPhone, iPad) <span>(3)</span></li>
+                        <li>macOS (Mac) <span>(3)</span></li>
+                        <li>Cross-platform <span>(3)</span></li>
+                    </ul>
+                </div>
+                <!-- Target users --> 
+                <div class="section-left-keys-block">                    
+                    <h3 class="section-left-keys-cat" id="cat-user"><span id="fig-user"> + </span>Target users</h3>
+                    <ul class="section-left-keys-ul" id="ul-user">
+                        <li>Teachers <span>(3)</span></li>
+                        <li>Students <span>(3)</span></li>
+                        <li>Administrators <span>(3)</span></li>
+                    </ul>
+                </div>
+                <!-- Subjects --> 
+                <div class="section-left-keys-block">                    
+                    <h3 class="section-left-keys-cat" id="cat-subj"><span id="fig-subj"> + </span>Subjects</h3>
+                    <ul class="section-left-keys-ul" id="ul-subj">
+                        <li>Across the curriculum <span>(3)</span></li>
+                        <li>Chemistry <span>(3)</span></li>
+                        <li>Math <span>(3)</span></li>
+                        <li>Physics <span>(3)</span></li>
+                    </ul>
+                </div>
+                <!-- Content & Language --> 
+                <div class="section-left-keys-block">                    
+                    <h3 class="section-left-keys-cat" id="cat-lang"><span id="fig-lang"> + </span>Content &amp; language</h3>
+                    <ul class="section-left-keys-ul" id="ul-lang">
+                        <li>with video <span>(3)</span></li>
+                        <li>English <span>(3)</span></li>
+                        <li>Français <span>(3)</span></li>
+                        <li>简体中文 <span>(3)</span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- right part: 3 components -->
+        <div class="d-flex flex-column section-right">
+            <!-- 1/3: search bar / btn-->
+            <div class="section-right-search">
+                <div class="d-flex flex-row justify-content-between section-right-search-row">
+                    <div class="section-right-search-row-item">
+                        <!-- btn 1. latest blogs --> 
+                        <a href="#" class="btn btn-search blog">Latest blogs</a>
+                    </div>
+                    <div class="section-right-search-row-item">
+                        <form class="form-search form-inline">
+                            <!-- search engine input -->
+                                <input type="text" class="form-control" id="grandSearch" placeholder="Search Edu Tech">
+                                <button type="submit" class="btn btn-search">
+                                    <img src="img/btn-search.png" alt="Search" class="btn-search-img">
+                                </button>
+                        </form>
+                    </div>
+                    <div class="section-right-search-row-item">
+                        <!-- btn 2. adv. search -->
+                        <a href="#" class="btn btn-search adv">Advanced Search</a>
+                    </div>
+                </div>
+                
+            </div>
+
+            <!-- 2/3: advanced search -->
+            <div class="section-right-advanced">
+                <!-- form 2: advanced search -->
+                <form class="form-advanced">
+                    <div class="d-flex flex-column">
+                        <div class="row section-right-advanced-row section-right-advanced-row-1">
+                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
+                                <!-- Platform -->
+                                choose platform
+                            </div>
+                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
+                                <!-- Target Users -->
+                                choose target user
+                            </div>
+                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
+                                <!-- Schools -->
+                                choose school
+                            </div>
+                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
+                                <!-- Keywords (MAX 3) -->
+                                input keywords
+                            </div>
+                        </div>
+                        <div class="row section-right-advanced-row section-right-advanced-row-2">
+                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-2">
+                                <!-- Availability -->
+                                choose avail
+                            </div>
+                            <div class="col-md-6 section-right-advanced-col section-right-advanced-col-2">
+                                <!-- Subjects -->
+                                choose subjects
+                            </div>
+                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-2">
+                                <div class="d-flex flex-column section-right-advanced-col-2-column">
+                                    <div class="section-right-advanced-col-2-column-content">
+                                        <!-- Content & langauge -->
+                                        choose content &amp; lang
+                                    </div>
+                                    <button type="submit" class="btn btn-search-adv section-right-advanced-col-2-column-btn">
+                                        Advanced search
+                                        <img src="#" alt="Search">
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+
+            <!-- 3/3: search results -->
+            <div class="section-right-results">
+                <div class="d-flex flex-column">
+                    <div class="section-right-results-title">
+                        <div class="section-right-results-title-description">
+                            12 posts found
+                        </div>
+                        <div class="section-right-results-title-sort">
+                            sort by
+                            <button>Relevance</button>
+                        </div>
+                    </div>
+                    <!-- column of results -->
+                    <div class="section-right-results-blog">
+                        <!-- blog tag 1 -->
+                        <div class="row">
+                            <div class="col-md-9 blog-left">
+                                title &amp; tags
+                            </div>
+                            <div class="col-md-3 blog-right">
+                                time, source, &amp; favorite, share
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+    <!-- footer -->
+    <footer class="footer">
+        <div class="d-flex flex-column footer-column">
+            <!-- footer 1st row -->
+            <div class="row footer-row footer-row-1">
+                <div class="col-md-7 d-none d-md-block footer-row-1-col footer-row-1-col-left">
+                    <!-- profile -->
+                    <div class="media footer-row-media">
+                        <img src="img/profile_sq.jpg" alt="Profile Photo" class="align-self-start footer-row-media-img">
+                        <div class="media-body footer-row-media-body">
+                            <h6>This web database is built with LOVE by Charles and his CAT, Nova.</h6>
+                            <p>Charles is currently a graduate student in the Faculty of Education of McGill University, and
+                                Nova is a 6-year-old American Shorthair kitten brought by Charles and his wife from China
+                                to Canada. The family now live happily in Montreal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 footer-row-1-col footer-row-1-col-right">
+                    <!-- subscription -->
+                    <h3 class="footer-h3">Sign up to our newsletter</h3>
+                    <form class="form-inline footer-form">
+                        <input type="email" class="form-control footer-form-input" name="subEmail" placeholder="Your email address">
+                        <button type="submit" class="btn btn-secondary footer-form-btn">Subscribe</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- footer 2nd row -->
+            <div class="row footer-row footer-row-2">
+                <div class="col-md-7 footer-row-2-col footer-row-2-col-left">
+                    <!-- social networks -->
+                    <div class="d-flex flex-row justify-content-around footer-row-sn">
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.facebook.com/Charles.Ai27">
+                                <img src="img/sn-facebook.png" alt="Facebook account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://twitter.com/CharlesAi27?ref_src=twsrc%5Etfw" data-show-count="false">
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                <img src="img/sn-twitter.png" alt="Twitter account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.linkedin.com/in/charles-ai/">
+                                <img src="img/sn-linkedIn.png" alt="LinkedIn account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.instagram.com/charles_ai/">
+                                <img src="img/sn-instagram.png" alt="Instagram account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.reddit.com/user/cortis3/">
+                                <img src="img/sn-reddit.png" alt="Reddit account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="#">
+                                <!-- should be popup QR code -->
+                                <img src="img/sn-wechat.png" alt="Wechat account">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 footer-row-2-col footer-row-2-col-right">
+                    <!-- links & copyright -->
+                    <div class="d-flex flex-row justify-content-center footer-row-links">
+                        <div class="footer-row-links-item">
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="footer-row-links-item">
+                            <a href="#">Blog</a>
+                        </div>
+                        <div class="footer-row-links-item">
+                            <a href="#">Privacy</a>
+                        </div>
+                        <div class="footer-row-links-item">
+                            <a href="#">Future plans</a>
+                        </div>
+                    </div>
+                    <p class="footer-copyrights">&copy; 2018 Red Nova Technology. All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+
+        $("#cat-edu").click(function(){
+            $("#fig-edu").toggle(500);
+            $("#ul-edu").slideToggle();
+        })        
+        
+    });
+</script>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

@@ -6308,6 +6308,23 @@ section {
     section {
       width: 100vw; } }
 
+.btn-search-adv-small {
+  width: 16rem;
+  height: 4.5rem;
+  position: relative;
+  margin: -5.5rem 0 1rem 51rem;
+  border: 1px solid #dee2e6;
+  background-color: rgba(70, 183, 224, 0.24); }
+  .btn-search-adv-small-text {
+    font-size: 1.4rem;
+    margin-left: -3.1rem;
+    margin-top: 2px; }
+    .btn-search-adv-small-text-img {
+      position: absolute;
+      width: 25%;
+      right: -.8rem;
+      top: .8rem; }
+
 header {
   position: relative; }
 
@@ -6822,8 +6839,16 @@ footer {
   .form-check-input-text {
     margin-left: .5rem;
     margin-bottom: 2px; }
+    .form-check-input-text-arts {
+      padding-right: 1rem; }
   .form-check-edu {
     line-height: 1.6rem; }
+  .form-check-acrossCurr, .form-check-subject {
+    margin-left: 8.5%; }
+    .form-check-acrossCurr:not(:first-child), .form-check-subject:not(:first-child) {
+      margin-left: 6%; }
+  .form-check-content {
+    margin-left: 8%; }
 
 .form-keyword {
   margin: 1px 4.5rem; }
@@ -6838,7 +6863,8 @@ footer {
   text-align: center; }
 
 .form-advanced-column {
-  width: 100%; }
+  width: 100%;
+  position: relative; }
   .form-advanced-column-card:not(:last-child) {
     background-color: rgba(255, 115, 115, 0.15);
     width: 15rem;
@@ -6869,8 +6895,11 @@ footer {
       .form-advanced-column-card-narrow-subjects {
         width: 30.5rem !important;
         background-color: rgba(255, 201, 82, 0.33) !important; }
+        .form-advanced-column-card-narrow-subjects-checkrow2 {
+          margin-top: -3px; }
       .form-advanced-column-card-narrow-content {
-        height: 14rem !important; }
+        height: 14rem !important;
+        background-color: rgba(255, 201, 82, 0.33) !important; }
 
 .section-left {
   margin-left: 8rem;

@@ -6810,30 +6810,6 @@ footer {
         opacity: .2;
         transform: rotate(135deg); }
 
-.form-advanced-column {
-  width: 100%; }
-  .form-advanced-column-card:not(:last-child) {
-    background-color: rgba(255, 115, 115, 0.15);
-    width: 15rem;
-    height: 20rem; }
-  .form-advanced-column-card:last-child {
-    background-color: rgba(70, 183, 224, 0.24);
-    width: 26rem;
-    height: 20rem; }
-  .form-advanced-column-card {
-    padding-top: 1rem; }
-    .form-advanced-column-card-narrow {
-      margin: .5rem 2px;
-      border: 1px solid #ced4da;
-      border-radius: .5rem; }
-      .form-advanced-column-card-narrow h3 {
-        text-align: center;
-        border-bottom: 1px solid rgba(70, 183, 224, 0.24);
-        margin: .4rem .7rem 2px .7rem;
-        padding-bottom: 1rem; }
-      .form-advanced-column-card-narrow-check {
-        margin-top: 1px; }
-
 .form-check {
   padding-left: 0 !important;
   margin-left: 23%;
@@ -6860,6 +6836,41 @@ footer {
   padding-top: .6rem;
   margin-bottom: 0 !important;
   text-align: center; }
+
+.form-advanced-column {
+  width: 100%; }
+  .form-advanced-column-card:not(:last-child) {
+    background-color: rgba(255, 115, 115, 0.15);
+    width: 15rem;
+    height: 20rem; }
+  .form-advanced-column-card:last-child {
+    background-color: rgba(70, 183, 224, 0.24);
+    width: 26rem;
+    height: 20rem; }
+  .form-advanced-column-card {
+    padding-top: 1rem; }
+    .form-advanced-column-card-narrow {
+      margin: .5rem 2px;
+      border: 1px solid #ced4da;
+      border-radius: .5rem; }
+      .form-advanced-column-card-narrow h3 {
+        text-align: center;
+        border-bottom: 1px solid rgba(70, 183, 224, 0.24);
+        margin: .4rem .7rem 2px .7rem;
+        padding-bottom: 1rem; }
+      .form-advanced-column-card-narrow-check {
+        margin-top: 1px; }
+      .form-advanced-column-card-narrow-payment {
+        background-color: rgba(255, 201, 82, 0.33) !important; }
+        .form-advanced-column-card-narrow-payment h3 {
+          font-size: 1.6rem;
+          color: #495057;
+          padding-bottom: 1.2rem; }
+      .form-advanced-column-card-narrow-subjects {
+        width: 30.5rem !important;
+        background-color: rgba(255, 201, 82, 0.33) !important; }
+      .form-advanced-column-card-narrow-content {
+        height: 14rem !important; }
 
 .section-left {
   margin-left: 8rem;

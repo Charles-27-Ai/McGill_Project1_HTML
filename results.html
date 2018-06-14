@@ -279,50 +279,208 @@
             <div class="section-right-advanced">
                 <!-- form 2: advanced search -->
                 <form class="form-advanced">
-                    <div class="d-flex flex-column">
-                        <div class="row section-right-advanced-row section-right-advanced-row-1">
-                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
-                                <!-- Platform -->
-                                choose platform
+                    <div class="d-flex flex-column form-advanced-column">
+                        <!-- column 1: platform, user, education, keywords -->
+                        <div class="d-flex flex-row form-advanced-column-row1">                            
+                            <!-- platforms -->
+                            <div class="form-advanced-column-card form-advanced-column-card-narrow">
+                                <h3>Platforms</h3>                                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        <p class="form-check-input-text">Website</p>
+                                    </label>                                        
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        <p class="form-check-input-text">iOS (iPhone, iPad)</p>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        <p class="form-check-input-text">macOS (Mac)</p>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
-                                <!-- Target Users -->
-                                choose target user
+                            <!-- target users -->
+                            <div class="form-advanced-column-card form-advanced-column-card-narrow">
+                                <h3>Target users</h3>                                
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        <p class="form-check-input-text">Teachers</p>
+                                    </label>                                        
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        <p class="form-check-input-text">Students</p>
+                                    </label>
+                                </div>
+                                <div class="form-check">
+                                    <label class="form-check-label">
+                                        <input type="checkbox" class="form-check-input">
+                                        <p class="form-check-input-text">Administrators</p>
+                                    </label>
+                                </div>
                             </div>
-                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
-                                <!-- Schools -->
-                                choose school
-                            </div>
-                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-1">
-                                <!-- Keywords (MAX 3) -->
-                                input keywords
-                            </div>
-                        </div>
-                        <div class="row section-right-advanced-row section-right-advanced-row-2">
-                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-2">
-                                <!-- Availability -->
-                                choose avail
-                            </div>
-                            <div class="col-md-6 section-right-advanced-col section-right-advanced-col-2">
-                                <!-- Subjects -->
-                                choose subjects
-                            </div>
-                            <div class="col-md-3 section-right-advanced-col section-right-advanced-col-2">
-                                <div class="d-flex flex-column section-right-advanced-col-2-column">
-                                    <div class="section-right-advanced-col-2-column-content">
-                                        <!-- Content & langauge -->
-                                        choose content &amp; lang
+                            <!-- Education lvls -->
+                            <div class="form-advanced-column-card form-advanced-column-card-narrow">
+                                <div><h3>Education levels</h3> </div>
+                                <div class="form-advanced-column-card-narrow-check">
+                                    <div class="form-check form-check-edu">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Post-secondary</p>
+                                        </label>                                        
                                     </div>
-                                    <button type="submit" class="btn btn-search-adv section-right-advanced-col-2-column-btn">
-                                        Advanced search
-                                        <img src="#" alt="Search">
-                                    </button>
+                                    <div class="form-check form-check-edu">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Secondary</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-edu">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Elementary</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check form-check-edu">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Early childhood</p>
+                                        </label>
+                                    </div>
+                                </div>                               
+                                
+                            </div>
+                            <!-- Keywords  -->
+                            <div class="form-advanced-column-card form-advanced-column-card-narrow">
+                                <h3>Keywords (max. 3)</h3>
+                                <!-- keyword input 1 -->                                
+                                <div class="form-group form-keyword">
+                                    <input type="text" id="keyword-1" class="form-control form-keyword-input" name="keyword-1">
+                                </div>
+                                <!-- radio AND OR -->
+                                <div class="form-group form-radio">
+                                    <label class="form-radio-label">
+                                        <input type="radio" class="form-radio-input" name="andLogic1" value="1">
+                                        <span class="form-radio-text">AND</span>
+                                    </label>
+                                    <label class="form-radio-label">
+                                        <input type="radio" class="form-radio-input" name="orLogic1" value="2">
+                                        <span class="form-radio-text">OR</span>
+                                    </label>
+                                </div>
+                                <!-- keyword input 2 -->                                
+                                <div class="form-group form-keyword">
+                                        <input type="text" id="keyword-2" class="form-control form-keyword-input" name="keyword-2">
+                                    </div>
+                                <!-- radio AND OR -->
+                                <div class="form-group form-radio">
+                                    <label class="form-radio-label">
+                                        <input type="radio" class="form-radio-input" name="andLogic2" value="1">
+                                        <span class="form-radio-text">AND</span>
+                                    </label>
+                                    <label class="form-radio-label">
+                                        <input type="radio" class="form-radio-input" name="orLogic2" value="2">
+                                        <span class="form-radio-text">OR</span>
+                                    </label>
+                                </div>
+                                <!-- keyword input 3 -->                                
+                                <div class="form-group form-keyword">
+                                    <input type="text" id="keyword-3" class="form-control form-keyword-input" name="keyword-3">
                                 </div>
                             </div>
                         </div>
+
+                        <!-- column 2: payment, subjects, content & language -->
+                        <div class="d-flex flex-row form-advanced-column-row2">
+                            <!-- payment models -->
+                            <div class="form-advanced-column-card form-advanced-column-card-narrow">
+                                    <h3>Payment models</h3>                                
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Totally free</p>
+                                        </label>                                        
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Buyout with free trial</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Subscription</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                
+                                <!-- Education lvls -->
+                                <div class="form-advanced-column-card form-advanced-column-card-narrow">
+                                    <div><h3>Education levels</h3> </div>
+                                    <div class="form-advanced-column-card-narrow-check">
+                                        <div class="form-check form-check-edu">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                                <p class="form-check-input-text">Post-secondary</p>
+                                            </label>                                        
+                                        </div>
+                                        <div class="form-check form-check-edu">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                                <p class="form-check-input-text">Secondary</p>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-edu">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                                <p class="form-check-input-text">Elementary</p>
+                                            </label>
+                                        </div>
+                                        <div class="form-check form-check-edu">
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                                <p class="form-check-input-text">Early childhood</p>
+                                            </label>
+                                        </div>
+                                    </div>                               
+                                    
+                                </div>
+
+                                <!-- Content & language -->
+                                <div class="form-advanced-column-card form-advanced-column-card-narrow">
+                                    <h3>Target users</h3>                                
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">with video</p>
+                                        </label>                                        
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">English only</p>
+                                        </label>
+                                    </div>
+                                    <div class="form-check">
+                                        <label class="form-check-label">
+                                            <input type="checkbox" class="form-check-input">
+                                            <p class="form-check-input-text">Multilingual</p>
+                                        </label>
+                                    </div>
+                                </div>
+                                <!-- Advanced sarch button  -->
+                                
+                        </div>
                     </div>
                 </form>
-
             </div>
 
             <!-- 3/3: search results -->

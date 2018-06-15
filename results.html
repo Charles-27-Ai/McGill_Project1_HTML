@@ -318,8 +318,8 @@
                         </form>
                     </div>
                     <div class="section-right-search-row-item">
-                        <!-- btn 2. adv. search -->
-                        <a href="#" class="btn btn-search adv">Advanced Search</a>
+                        <!-- btn 2. advanced search -->
+                        <a href="#" id="advDropdown" class="btn btn-search adv">Advanced Search</a>
                     </div>
                 </div>
 
@@ -937,13 +937,17 @@
 
 <script>
     $(document).ready(function () {
-
         $("#cat-edu").click(function () {
             $("#fig-edu").toggle(500);
             $("#ul-edu").slideToggle();
         })
-
     });
+    $(document).ready(function () {
+        $(".form-advanced").hide();  // pending
+        $("#advDropdown").click(function () {
+            $(".form-advanced").slideToggle(500);
+        });
+    })
 </script>
 
 

@@ -549,7 +549,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
 
                             </div>
@@ -560,10 +560,10 @@
                                 <div class="d-flex flex-row">
                                     <div class="form-check form-check-content form-advanced-column-card-narrow-check">
                                         <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            <p class="form-check-input-text">With video</p>
-                                        </label>
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                                <p class="form-check-input-text">With video</p>
+                                            </label>
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label">
@@ -571,14 +571,14 @@
                                                 <p class="form-check-input-text">Français</p>
                                             </label>
                                         </div>
-                                        
+
                                     </div>
                                     <div class="form-check form-check-content form-advanced-column-card-narrow-check">
                                         <div class="form-check">
-                                        <label class="form-check-label">
-                                            <input type="checkbox" class="form-check-input">
-                                            <p class="form-check-input-text">English</p>
-                                        </label>
+                                            <label class="form-check-label">
+                                                <input type="checkbox" class="form-check-input">
+                                                <p class="form-check-input-text">English</p>
+                                            </label>
                                         </div>
                                         <div class="form-check">
                                             <label class="form-check-label">
@@ -587,7 +587,7 @@
                                             </label>
                                         </div>
                                     </div>
-                                    
+
                                 </div>
                             </div>
                         </div>
@@ -596,7 +596,7 @@
                             <h3 class="btn-search-adv-small-text">Advanced Search</h3>
                             <img src="img/btn-search.png" alt="Advanced search" class="btn-search-adv-small-text-img">
                         </button>
-                        
+
                     </div>
                 </form>
             </div>
@@ -604,30 +604,238 @@
             <!-- 3/3: search results -->
             <div class="section-right-results">
                 <div class="d-flex flex-column">
+                    <!-- search result title -->
                     <div class="section-right-results-title">
-                        <div class="d-flex flex-row justify-content-between">
+                        <div class="d-flex flex-row justify-content-between section-right-results-title-row">
                             <div class="section-right-results-title-description">
                                 12 posts found
                             </div>
                             <div class="section-right-results-title-sort">
-                                sort by
-                                <button>Relevance</button>
-                                <form class="form-sort"></form>
+                                <form class="form-inline form-sort">
+                                    <label for="sortBlog" class="form-sort-label">Sort by</label>
+                                    <select id="sortBlog" class="form-control">
+                                        <option>Relevance</option>
+                                        <option>Time: latest -> earliest</option>
+                                        <option>Category &amp; kewwords</option>
+                                    </select>
+                                </form>
                             </div>
                         </div>
-                        
+
                     </div>
                     <!-- column of results -->
                     <div class="section-right-results-blog">
-                        <!-- blog tag 1 -->
-                        <div class="row">
-                            <div class="col-md-9 blog-left">
-                                title &amp; tags
+                        <!-- blogs -->
+                        <div class="d-flex flex-column">
+                            <!-- search result 1 -->
+                            <div class="d-flex flex-row section-right-results-blog-content">
+                                <div class="media section-right-results-blog-content-media">
+                                    <img src="img/blog-icon-1.png" alt="blog-1">
+                                    <div class="media-body section-right-results-blog-content-media-body">
+                                        <h4>Burabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</h4>
+                                        <div class="d-flex flex-row justify-content-start section-right-results-blog-content-media-body-tags">
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 1
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 2
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 3
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 4
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 5
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column section-right-results-blog-content-info">
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-addedTime">
+                                        Added Time: 06/25/2018
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-source">
+                                        Source: Times magazine
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-favShare">
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="img/favorite-icon.png" alt="favourite">
+                                            </div>
+                                            <div>
+                                                <img src="img/share-icon.png" alt="share">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="col-md-3 blog-right">
-                                time, source, &amp; favorite, share
+                            <!-- search result 2 -->
+                            <div class="d-flex flex-row section-right-results-blog-content">
+                                <div class="media section-right-results-blog-content-media">
+                                    <img src="img/blog-icon-2.png" alt="blog-2">
+                                    <div class="media-body section-right-results-blog-content-media-body">
+                                        <h4>Burabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</h4>
+                                        <div class="d-flex flex-row justify-content-start section-right-results-blog-content-media-body-tags">
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 1
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 2
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 3
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 4
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 5
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column section-right-results-blog-content-info">
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-addedTime">
+                                        Added Time: 06/25/2018
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-source">
+                                        Source: Times magazine
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-favShare">
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="img/favorite-icon.png" alt="favourite">
+                                            </div>
+                                            <div>
+                                                <img src="img/share-icon.png" alt="share">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- search result 3 -->
+                            <div class="d-flex flex-row section-right-results-blog-content">
+                                <div class="media section-right-results-blog-content-media">
+                                    <img src="img/blog-icon-3.png" alt="blog-3">
+                                    <div class="media-body section-right-results-blog-content-media-body">
+                                        <h4>Burabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</h4>
+                                        <div class="d-flex flex-row justify-content-start section-right-results-blog-content-media-body-tags">
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 1
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 2
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 3
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 4
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 5
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column section-right-results-blog-content-info">
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-addedTime">
+                                        Added Time: 06/25/2018
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-source">
+                                        Source: Times magazine
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-favShare">
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="img/favorite-icon.png" alt="favourite">
+                                            </div>
+                                            <div>
+                                                <img src="img/share-icon.png" alt="share">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- search result 4 -->
+                            <div class="d-flex flex-row section-right-results-blog-content">
+                                <div class="media section-right-results-blog-content-media">
+                                    <img src="img/blog-icon-4.png" alt="blog-4">
+                                    <div class="media-body section-right-results-blog-content-media-body">
+                                        <h4>Burabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</h4>
+                                        <div class="d-flex flex-row justify-content-start section-right-results-blog-content-media-body-tags">
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 1
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 2
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 3
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 4
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 5
+                                            </div>
+                                            <div class="section-right-results-blog-content-media-body-tags-text">
+                                                tag 6
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="d-flex flex-column section-right-results-blog-content-info">
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-addedTime">
+                                        Added Time: 06/25/2018
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-source">
+                                        Source: Times magazine
+                                    </div>
+                                    <div class="section-right-results-blog-content-info-detail section-right-results-blog-content-info-favShare">
+                                        <div class="d-flex flex-row">
+                                            <div>
+                                                <img src="img/favorite-icon.png" alt="favourite">
+                                            </div>
+                                            <div>
+                                                <img src="img/share-icon.png" alt="share">
+                                            </div>
+                                            
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
+                        
+                        <!-- pagination -->
+                        <nav class="section-right-results-pagination">
+                        
+                            <ul class="pagination justify-content-center">
+                                <li></li>
+                                <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+                                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                                
+                            </ul>
+                        </nav>
                     </div>
                 </div>
             </div>

@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Red Nova Edu Engine</title>
+
+    <!-- Personal CSS JS-->
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/java.js" type="text/javascript" charset="utf-8" async defer></script>
+    <!-- font-awesome-->
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+        crossorigin="anonymous">
+    <script src="js/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container navbar-container">
+                <a class="navbar-brand" href="index.html">
+                    <img class="navbar-img" src="img/project-logo.png" alt="Red Nova Edu Tech">
+                    <span class="navbar-text">Red Nova Engine</span>
+                </a>
+
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarNav">
+                    <span class="navbar-toggler-icon">
+                        <img src="img/hamburger.png" alt="hamburger" class="navbar-toggler-icon-img">
+                    </span>
+                </button>
+                <!-- nav buttons -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav justify-content-center">
+                        <!-- Schools -->
+                        <li class="nav-item dropdown nav-item-schools">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/school-logo-1.png" alt="Schools" class="nav-img"> Education
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Post-secondary</a>
+                                <a href="#" class="dropdown-item">Secondary</a>
+                                <a href="#" class="dropdown-item">Elementary</a>
+                                <a href="#" class="dropdown-item">Early childhood</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="schools-dropdown">
+                                <ul class="nav-dropdown-ul list-inline">
+                                    <li class="nav-dropdown-li">Post-secondary</li>
+                                    <li class="nav-dropdown-li">Secondary</li>
+                                    <li class="nav-dropdown-li">Elementary</li>
+                                    <li class="nav-dropdown-li">Early childhood</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Users -->
+                        <li class="nav-item dropdown nav-item-users">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/users-logo-1.png" alt="Users" class="nav-img"> Users
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Teachers</a>
+                                <a href="#" class="dropdown-item">Students</a>
+                                <a href="#" class="dropdown-item">administrators</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="users-dropdown">
+                                <ul class="nav-dropdown-ul">
+                                    <li class="nav-dropdown-li">Teachers</li>
+                                    <li class="nav-dropdown-li">Students</li>
+                                    <li class="nav-dropdown-li">administrators</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Platforms -->
+                        <li class="nav-item dropdown nav-item-platforms">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/platforms-logo-1.png" alt="Platforms" class="nav-img"> Platforms
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">Web Apps</a>
+                                <a href="#" class="dropdown-item">iOS (iPhone iPad)</a>
+                                <a href="#" class="dropdown-item">macOS (Macintosh)</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="platforms-dropdown">
+                                <ul class="nav-dropdown-ul">
+                                    <li class="nav-dropdown-li">Web Apps</li>
+                                    <li class="nav-dropdown-li">iOS (iPhone iPad)</li>
+                                    <li class="nav-dropdown-li">macOS (Macintosh)</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Categories -->
+                        <li class="nav-item dropdown nav-item-cats">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/categories-logo-1.png" alt="Categories" class="nav-img"> Categories
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <a href="#" class="dropdown-item">My favourite techs</a>
+                                <a href="#" class="dropdown-item">Trending new tools</a>
+                                <a href="#" class="dropdown-item">Appealing widgets</a>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="cats-dropdown">
+                                <ul class="nav-dropdown-ul">
+                                    <li class="nav-dropdown-li">My favourite techs</li>
+                                    <li class="nav-dropdown-li">Trending new tools</li>
+                                    <li class="nav-dropdown-li">Appealing widgets</li>
+                                </ul>
+                            </div>
+                        </li>
+                        <!-- Keywords-->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">
+                                <img src="img/keywords-logo-1.png" alt="Keywords" class="nav-img"> Keywords
+                            </a>
+                        </li>
+                        <!-- About -->
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">
+                                <img src="img/about-logo-1.png" alt="About" class="nav-img"> About
+                            </a>
+                        </li>
+                        <!-- Sign up / Log in -->
+                        <li class="nav-item dropdown nav-item-sign">
+                            <a href="#" class="nav-link nav-link-sign dropdown-toggle" data-toggle="dropdown">
+                                <img src="img/account-logo-1.png" alt="SignUp/LogIn" class="nav-img">
+                                <p>Log in / Sign Up</p>
+                            </a>
+                            <!-- dropdown for small screens -->
+                            <div class="dropdown-menu">
+                                <form class="dropdown-item dropdown-menu-form">
+                                    <div class="form-group dropdown-menu-form-group">
+                                        <input type="email" id="email" class="form-control form-control-sm" placeholder="Email address">
+                                    </div>
+                                    <div class="form-group dropdown-menu-form-group">
+                                        <input type="password" id="password" class="form-control form-control-sm" placeholder="Password">
+                                    </div>
+                                    <div class="container dropdown-menu-form-group-container">
+                                        <button type="submit" class="btn btn-secondary">Log in</button>
+                                        <a href="#">Sign up</a>
+                                    </div>
+                                </form>
+                            </div>
+                            <!-- dropdown for large screens -->
+                            <div class="nav-dropdown" id="sign-dropdown">
+                                <form class="nav-dropdown-form">
+                                    <div class="form-group nav-dropdown-form-group">
+                                        <input type="email" id="email" class="form-control form-control-sm" placeholder="Email address">
+                                    </div>
+                                    <div class="form-group nav-dropdown-form-group">
+                                        <input type="password" id="password" class="form-control form-control-sm" placeholder="Password">
+                                    </div>
+                                    <div class="container nav-dropdown-form-group-container">
+                                        <button type="submit" class="btn btn-secondary">Log in</button>
+                                        <a href="#">Sign up</a>
+                                    </div>
+                                </form>
+                            </div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link">
+                                <img src="img/flag-uk.png" alt="English" class="nav-img nav-search">
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- part 1. blog title-->
+    <section class="section-blog section-blog-primary">
+        <div class="d-flex flex-column">
+            <div class="section-blog-primary-tags">
+                <ul>
+                    <li><a href="#">Math</a></li>
+                    <li><a href="#">iOS</a></li>
+                    <li><a href="#">Middle School</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
+            </div>
+            <div class="section-blog-primary-text">
+                <h1>The Best Resources for Middles School Math Classes with iOS devices</h1>
+            </div>
+            <div class="section-blog-primary-subtitle">
+                <h2>Math teaching has evolved into math exploring in an iOS classroom</h2>
+            </div>
+            <div class="d-flex flex-row justify-content-around section-blog-primary-share">
+                <div class="section-blog-primary-share-links">
+                    <ul>
+                        <li><a href="#"><img src="img/blog-sn-mail.png" alt="Mail"></a></li>
+                        <li><a href="#"><img src="img/blog-sn-facebook.png" alt="Facebook"></a></li>
+                        <li><a href="#"><img src="img/blog-sn-linkedin.png" alt="LinkedIn"></a></li>
+                        <li><a href="#"><img src="img/blog-sn-twitter.png" alt="Twitter"></a></li>
+                        <li><a href="#"><img src="img/blog-sn-google.png" alt="Google+"></a></li>
+                        <li><a href="#"><img src="img/blog-sn-reddit.png" alt="Reddit"></a></li>
+                        <li><a href="#"><img src="img/blog-sn-sina.png" alt="Sina Weibo"></a></li>
+                        <li><a href="#"><img src="img/blog-sn-wechat.png" alt="Wechat"></a></li>
+                    </ul>
+                </div>
+                <div class="section-blog-primary-share-favourite">
+                    <img src="img/favorite-icon.png" alt="Favortie">
+                    
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- part 1.5 blog photo-->
+    <section class="section-blog section-blog-secondary">
+        <div class="d-flex flex-column">
+            <div class="section-blog-secondary-photo">
+                <img src="img/blog-title-1.jpg" alt="Math">
+            </div>
+            <div class="section-blog-secondary-author">
+                <div class="d-flex flex-row justify-content-start section-blog-secondary-author-sources">
+                    <h3 class="section-blog-secondary-author-gray">
+                        Source(s):
+                    </h3>
+                    <h3 class="section-blog-secondary-author-black">
+                        www.nba.com   www.nba.com   www.cctv.com
+                    </h3>
+                </div>
+                <div class="d-flex flex-row justify-content-start section-blog-secondary-author-time">
+                    <h3 class="section-blog-secondary-author-gray">
+                        Written by:
+                    </h3>
+                    <h3 class="section-blog-secondary-author-black">
+                        Charles Ai
+                    </h3>
+                    <h3 class="section-blog-secondary-author-gray">
+                        Updated 27 June, 2018
+                    </h3>
+                </div>        
+                    
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- part 2. blog body -->
+    <section class="section-blog section-blog-body">
+        <div class="section-blog-body-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae minima dignissimos suscipit explicabo quisquam eligendi libero nam, numquam autem, id neque omnis saepe error laudantium quasi aliquid excepturi! Repellendus, odio vitae dolorem deleniti eligendi optio provident quae ea rem omnis voluptas modi nam porro dolores qui similique iure, assumenda eaque obcaecati eos officia. Debitis eligendi repudiandae eveniet veniam sint libero repellendus consectetur? Tempora et consequuntur doloribus tenetur nisi neque facilis reprehenderit perspiciatis iste dolor, distinctio optio ea aspernatur saepe voluptatem non? Cum impedit debitis quaerat omnis assumenda nam delectus quidem obcaecati vitae aperiam, nostrum nobis nulla unde vero voluptatibus corporis?
+
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus dicta magnam fuga, nobis veniam provident, autem consequatur velit nostrum inventore distinctio? Quas quod aut, cupiditate rem animi voluptates dignissimos adipisci ea. Temporibus error minima perferendis deleniti dolores. Recusandae veritatis magni dignissimos ad molestias illo, ut molestiae temporibus commodi dolores mollitia. Esse tempora harum et recusandae repudiandae fugit, optio, assumenda itaque nam impedit cum consequuntur. Nobis ducimus soluta iure quam sunt iste cum, numquam maxime, perferendis necessitatibus velit. Libero, natus. Voluptatibus beatae vitae eligendi. Quia, minima non. Nulla repellendus nostrum eos, impedit, corrupti accusamus officia libero placeat adipisci aperiam praesentium dolores cum, accusantium enim provident delectus tempore cumque at rerum recusandae molestias. Vitae quos laboriosam quae totam officiis? Libero fuga blanditiis excepturi, nulla ipsam veniam dolores nemo ea placeat corrupti eaque illum! Rerum, tempora dignissimos earum quia perspiciatis autem dolorum officia cupiditate atque at alias quos rem, unde natus? Quod, quidem velit quis doloremque molestiae eaque porro quo rem animi blanditiis nihil, beatae iure. Omnis cum ipsum minus, iste consectetur numquam, debitis quo cupiditate repellendus, fuga similique. Molestias et illum, laudantium dolorem neque perspiciatis excepturi odit harum eum corporis sed nostrum eos consequatur sint eligendi dolore voluptatibus, molestiae in reiciendis provident?
+        </div>
+    </section>
+
+    <!-- part 3. blog comments -->
+    <section class="section-blog section-blog-comm">
+            blog comments
+    </section>
+    <!-- part 4. blog recommendation -->
+    <section class="section-blog section-blog-recomm">
+        <div class="d-flex flex-column">
+            <div class="section-blog-recomm-reading"> <!-- row 1: recommendation title -->
+                Recommended reading
+            </div>
+            <div class="d-flex flex-row flex-wrap section-blog-recomm-cards"> <!-- row 2: recommendation cards -->
+                <!-- card 1 -->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-1.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+                <!-- card 2 -->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-2.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+                <!-- card 3 -->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-1.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+                <!-- card 4-->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-2.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+                <!-- card 5 -->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-1.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+                <!-- card 6 -->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-1.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+                <!-- card 7 -->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-2.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+                <!-- card 8 -->
+                <div class="section-blog-recomm-cards-body">
+                    <div class="section-blog-recomm-cards-body-img">
+                        <img src="img/blog-title-1.jpg" alt="Blog title" class="img-fluid">
+                        <img src="img/blog-recom-video.png" alt="" class="img-fluid section-blog-recomm-cards-body-img-video">
+                    </div>
+                    <div class="section-blog-recomm-cards-body-title">
+                        <h3>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt</h3>
+                    </div>
+                    <div class="section-blog-recomm-cards-body-time">
+                        Updated time
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="footer">
+        <div class="d-flex flex-column footer-column">
+            <!-- footer 1st row -->
+            <div class="row footer-row footer-row-1">
+                <div class="col-md-7 d-none d-md-block footer-row-1-col footer-row-1-col-left">
+                    <!-- profile -->
+                    <div class="media footer-row-media">
+                        <img src="img/profile_sq.jpg" alt="Profile Photo" class="align-self-start footer-row-media-img">
+                        <div class="media-body footer-row-media-body">
+                            <h6>This web database is built with LOVE by Charles and his CAT, Nova.</h6>
+                            <p>Charles is currently a graduate student in the Faculty of Education of McGill University, and
+                                Nova is a 6-year-old American Shorthair kitten brought by Charles and his wife from China
+                                to Canada. The family now live happily in Montreal.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 footer-row-1-col footer-row-1-col-right">
+                    <!-- subscription -->
+                    <h3 class="footer-h3">Sign up to our newsletter</h3>
+                    <form class="form-inline footer-form">
+                        <input type="email" class="form-control footer-form-input" name="subEmail" placeholder="Your email address">
+                        <button type="submit" class="btn btn-secondary footer-form-btn">Subscribe</button>
+                    </form>
+
+                </div>
+            </div>
+            <!-- footer 2nd row -->
+            <div class="row footer-row footer-row-2">
+                <div class="col-md-7 footer-row-2-col footer-row-2-col-left">
+                    <!-- social networks -->
+                    <div class="d-flex flex-row justify-content-around footer-row-sn">
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.facebook.com/Charles.Ai27">
+                                <img src="img/sn-facebook.png" alt="Facebook account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://twitter.com/CharlesAi27?ref_src=twsrc%5Etfw" data-show-count="false">
+                                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                                <img src="img/sn-twitter.png" alt="Twitter account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.linkedin.com/in/charles-ai/">
+                                <img src="img/sn-linkedIn.png" alt="LinkedIn account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.instagram.com/charles_ai/">
+                                <img src="img/sn-instagram.png" alt="Instagram account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="https://www.reddit.com/user/cortis3/">
+                                <img src="img/sn-reddit.png" alt="Reddit account">
+                            </a>
+                        </div>
+                        <div class="footer-row-sn-img">
+                            <a href="#">
+                                <!-- should be popup QR code -->
+                                <img src="img/sn-wechat.png" alt="Wechat account">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-5 footer-row-2-col footer-row-2-col-right">
+                    <!-- links & copyright -->
+                    <div class="d-flex flex-row justify-content-center footer-row-links">
+                        <div class="footer-row-links-item">
+                            <a href="#">Contact</a>
+                        </div>
+                        <div class="footer-row-links-item">
+                            <a href="#">Blog</a>
+                        </div>
+                        <div class="footer-row-links-item">
+                            <a href="#">Privacy</a>
+                        </div>
+                        <div class="footer-row-links-item">
+                            <a href="#">Future plans</a>
+                        </div>
+                    </div>
+                    <p class="footer-copyrights">&copy; 2018 Red Nova Technology. All rights reserved.</p>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+
+</body>
+
+<script>
+    $(document).ready(function () {
+        $("#cat-edu").click(function () {
+            $("#fig-edu").toggle(500);
+            $("#ul-edu").slideToggle();
+        })
+    });
+    $(document).ready(function () {
+        $(".form-advanced").hide();  // pending
+        $("#advDropdown").click(function () {
+            $(".form-advanced").slideToggle(500);
+        });
+    })
+</script>
+
+
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="js/jquery.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+</html>

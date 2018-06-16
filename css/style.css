@@ -6988,7 +6988,8 @@ footer {
   .section-blog-primary {
     height: auto;
     border: none;
-    border-bottom: 1px solid #dee2e6; }
+    border-bottom: 1px solid #dee2e6;
+    position: relative; }
     .section-blog-primary-tags ul {
       list-style-type: none;
       margin-top: 2rem; }
@@ -7024,6 +7025,36 @@ footer {
       .section-blog-primary-share-favourite img {
         margin: 1rem 2rem 0 0;
         width: 8%; }
+    .section-blog-primary form {
+      position: fixed;
+      top: 10%;
+      right: 21%;
+      height: 5.8rem;
+      z-index: 9999; }
+      @media screen and (max-width: 768px) {
+        .section-blog-primary form {
+          width: 80vw; } }
+      .section-blog-primary form input {
+        font-size: 1.6rem;
+        line-height: 3rem;
+        height: 100%;
+        width: 26rem !important; }
+        @media screen and (max-width: 768px) {
+          .section-blog-primary form input {
+            width: 60vw !important; } }
+        .section-blog-primary form input:focus {
+          box-shadow: none;
+          border-color: transparent;
+          border-bottom: 1px solid #FE4282; }
+      .section-blog-primary form button {
+        width: 6rem;
+        height: 100%;
+        border: 1px solid #dee2e6;
+        border-left: transparent; }
+        .section-blog-primary form button img {
+          width: 100%; }
+      .section-blog-primary form button {
+        border: 1px solid #dee2e6; }
   .section-blog-secondary {
     margin-top: 1rem;
     height: 55rem;
@@ -7092,6 +7123,11 @@ footer {
       margin: 1rem 0 .5rem 2.5rem;
       font-size: 1.6rem;
       color: #495057; }
+  .section-right-profile-photo img {
+    height: 17rem;
+    width: 17rem;
+    -webkit-clip-path: circle(50% at 50% 50%);
+    clip-path: circle(50% at 50% 50%); }
 
 .form-check {
   padding-left: 0 !important;

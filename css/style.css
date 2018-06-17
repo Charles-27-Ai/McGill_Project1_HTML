@@ -7358,14 +7358,16 @@ footer {
   .form-aboutFeedback-input {
     height: 3rem;
     border: 1px solid #dee2e6;
-    border-radius: .5rem; }
+    border-radius: .5rem;
+    font-size: 1.4rem; }
     .form-aboutFeedback-input-name {
       margin-left: -3rem;
-      margin-right: 2rem; }
+      margin-right: 1.5rem; }
     .form-aboutFeedback-input-email {
       margin-left: 1.5rem; }
   .form-aboutFeedback label {
     width: 15rem;
+    margin-top: 2px;
     font-size: 1.6rem;
     color: #495057; }
   .form-aboutFeedback textarea {

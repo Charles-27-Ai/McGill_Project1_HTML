@@ -123,7 +123,7 @@
 						</li>
 						<!-- About -->
 						<li class="nav-item dropdown">
-							<a href="about.html" class="nav-link">
+							<a href="#" class="nav-link">
 								<img src="img/about-logo-1.png" alt="About" class="nav-img"> About
 							</a>
 						</li>
@@ -176,98 +176,47 @@
 		</nav>
 	</header>
 
-	<!-- big search bar -->
-	<section id="intro" class="section-intro">
-		<h1 class="section-intro-title">
-			An Online Database of Educational Technologies
-		</h1>
-		<div class="d-flex flex-row section-intro-row">
-			<div>
-				<form class="form-inline section-intro-form">
-					<input type="text" class="form-control" id="grandSearch" placeholder="Search Edu Tech">
-					<button type="submit" class="btn btn-search">
-						<img src="img/btn-search.png" alt="Search" class="btn-search-img">
-					</button>
-				</form>
-			</div>
-			<div class="section-intro-btn">
-				<a href="results.html" class="btn btn-search btn-search-others btn-search-others-adv">Advanced Search</a>
-				<a href="blog.html" class="btn btn-search btn-search-others btn-search-others-latest">Latest blogs</a>
-			</div>
-		</div>
-		<div class="section-intro-img section-intro-img-1">
-			<img src="img/intro-1.png" alt="WWW" class="section-intro-img-each">
-		</div>
-		<div class="section-intro-img section-intro-img-2">
-			<img src="img/intro-2.png" alt="E-learning" class="section-intro-img-each">
-		</div>
-		<div class="section-intro-img section-intro-img-3">
-			<img src="img/intro-3.png" alt="Cog Brain" class="section-intro-img-each">
-		</div>
-	</section>
+    <!-- About section -->
+    <section class="section-about">
+        <div class="d-flex flex-row">
+            <div class="section-about-mcgill">
+                <img src="img/mcgill-logo.png" alt="McGill University" class="img-fluid">
+                <h4>Faculty of Education | </h4>
+                <h5>Department of Integrated Studies of Education (DISE)</h5>
+            </div>
+            <div class="section-about-project">
+                <h1>About the project</h1>
+                <p>The application of educational technology has been proved essential to the optimization of teaching and learning experience in this internet era. However, due to a variety of reasons, few teachers and students have enough time or experience in choosing the right technology and cultivating its full potential in practice. To address this issue, the current project aims to help teachers (and all level of educators in general) to leverage online teaching applications and solutions by establishing a well organized, searchable web database. It features practical guides on most widely used teaching and learning technologies, as well as routinely updated blog entries with introductions, comments, comparisons, and critics on the most state-of-the-art teaching and learning technologies.</p>
+            </div>
+        </div>
+    </section>
 
-	<!-- how-to video -->
-	<section id="video" class="section-video" >
-		<iframe width="512" height="288" src="https://www.youtube.com/embed/UFwWWsz_X9s" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-	</section>
-	
-	<!-- potential users -->
-	<section id="users" class="section-users" >
-		<div class="d-flex flex-row justify-content-center">
-			<!-- 3 cards -->
-			<div class="section-users-card section-users-card-teacher">
-				<div class="section-users-card-img section-users-card-teacher-img">
-					<img src="img/card-teacher.png" alt="teacher">
-				</div>
-				<p class="section-users-card-text">
-					We help <strong>teachers</strong> find reliable educational tools that have been implemented and testified by other educators.
-				</p>
-				<a href="#" class="btn btn-card">Search for teachers</a>
-			</div>
-
-			<div class="section-users-card section-users-card-student">
-				<div class="section-users-card-img section-users-card-student-img">
-					<img src="img/card-student.png" alt="student">
-				</div>
-				<p class="section-users-card-text">
-					We help <strong>students</strong> explore online learning tools that can diversify their learning experience.
-				</p>
-				<a href="#" class="btn btn-card">Search for students</a>
-			</div>
-
-			<div class="section-users-card section-users-card-admin">
-				<div class="section-users-card-img section-users-card-admin-img">
-					<img src="img/card-admin.png" alt="administrators">
-				</div>
-				<p class="section-users-card-text">
-					We provide <strong>school administrators</strong> with useful online solutions that facilitate school management and staff workflows.
-				</p>
-				<a href="#" class="btn btn-card">Search for admins</a>
-			</div>
-		</div>
-		
-	</section>
-
-	<!-- comment and feedback -->
-	<section id="feedback" class="section-feedback" >
-		<h2 class="section-feedback-title">
-			Comments &amp; suggestions?
-		</h2>
-		<p class="section-feedback-text">
-			You are more than welcome to help us improve the quantity and quality of our database by sharing with us your ideas on existing introductions of the educational technologies. 
-		</p>
-		<a href="#" class="btn btn-feedback">Leave us a message</a>
-		<!-- 2 images -->
-		<div class="section-feedback-img section-feedback-img-1">
-			<img src="img/feedback-bulb.png" alt="bulb" class="section-feedback-img-each">
-		</div>
-		<div class="section-feedback-img section-feedback-img-2">
-			<img src="img/feedback-square.png" alt="puzzle" class="section-feedback-img-each">
-		</div>
-		<!-- feedback modal -->
-
-
-	</section>
+    <!-- Comment section -->
+    <section class="section-aboutFeedback">
+        <h1>Comments &amp; feedback</h1>
+        <form class="form-aboutFeedback">
+            <!-- line 1 -->
+            <div class="form-row form-aboutFeedback-row">
+                <div class="col-md-5">
+                    <div class="d-flex flex-row form-group">
+                        <label for="feedbackName">Name </label>
+                        <input type="text" name="feedbackName" id="feedbackName" class="form-control form-aboutFeedback-input form-aboutFeedback-input-name">
+                    </div>
+                </div>
+                <div class="col-md-7">
+                    <div class="d-flex flex-row form-group">
+                        <label for="feedbackEmail">Email address </label>
+                        <input type="email" name="feedbackEmail" id="feedbackEmail" class="form-control form-aboutFeedback-input form-aboutFeedback-input-email">
+                    </div>
+                </div>
+            </div>
+            <!-- line 2 -->
+            <div class="form-group">
+                <textarea id="message" rows="3" class="form-control form-aboutFeedback-input" placeholder="Your comment and feedback..."></textarea>
+            </div>
+            <button type="submit" class="btn btn-aboutFeedback">Submit</button>
+        </form>
+    </section>
 
 	<!-- footer -->
 	<footer class="footer">

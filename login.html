@@ -179,7 +179,7 @@
     <div class="section d-flex flex-row justify-content-center">
         <!-- login left part: 1 component -->
         <div class="section-left">
-            <div class="d-flex flex-column section-left-cats">
+            <div class="d-flex flex-column section-left-cats section-left-profile">
                 <h2>Good morning, Bob!</h2>
                 <ul>
                     <li>My profile</li>
@@ -206,9 +206,9 @@
                     </div>
                     <!-- profile details-->
                     <div class="d-flex flex-column section-right-profile-detail">
-                        
+
                         <h1 class="section-right-profile-title">My Profile</h1>
-                        
+
                         <div class="d-flex flex-row">
                             <div class="form-profile-labels">
                                 <h4>User name</h4>
@@ -228,7 +228,7 @@
                                         <option>administrator</option>
                                     </select>
                                     <div class="d-flex flex-row justify-content-between">
-                                        <button class="btn btn-profile" type="submit" name="profileSave">Edit</button>
+                                        <button class="btn btn-profile" type="submit" name="profileEdit">Edit</button>
                                         <button class="btn btn-profile" type="submit" name="profileSave">Save</button>
                                     </div>
                                 </div>
@@ -243,45 +243,75 @@
                 <div class="d-flex flex-column">
                     <h1 class="section-right-favourites-title">My Favourites</h1>
                     <table class="table table-striped section-right-favourites-table">
-                            <thead>
-                                <tr>
-                                    <th>Title of article</th>
-                                    <th>Key words</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <!-- <th scope="row">1</th> -->
-                                    
-                                    <td><a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</a></td>
-                                    <td>
-                                        <a href="#" class="section-right-favourites-table-keywords">Math</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">iOS</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">macOS</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">Middle School</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</a></td>
-                                    <td>
-                                        <a href="#" class="section-right-favourites-table-keywords">English</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">Chromebook</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">E-learning</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">France</a>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td><a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</a></td>
-                                    <td>
-                                        <a href="#" class="section-right-favourites-table-keywords">P.E.</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">Community</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">Teamwork</a>
-                                        <a href="#" class="section-right-favourites-table-keywords">Motivation</a>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
+                        <thead>
+                            <tr>
+                                <th>Title of article</th>
+                                <th>Key words</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <!-- <th scope="row">1</th> -->
+
+                                <td>
+                                    <a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis.
+                                        Aliquam id dolor.</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="section-right-favourites-table-keywords">Math</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">iOS</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">macOS</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">Middle School</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis.
+                                        Aliquam id dolor.</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="section-right-favourites-table-keywords">English</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">Chromebook</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">E-learning</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">France</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis.
+                                        Aliquam id dolor.</a>
+                                </td>
+                                <td>
+                                    <a href="#" class="section-right-favourites-table-keywords">P.E.</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">Community</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">Teamwork</a>
+                                    <a href="#" class="section-right-favourites-table-keywords">Motivation</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+                <!-- pagination -->
+                <nav class="section-right-favourites-pagination">
+                    <ul class="pagination justify-content-center">
+                        <li></li>
+                        <li class="page-item disabled">
+                            <a class="page-link" href="#">Previous</a>
+                        </li>
+                        <li class="page-item active">
+                            <a class="page-link" href="#">1</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">2</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">3</a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">Next</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
         </div>
 

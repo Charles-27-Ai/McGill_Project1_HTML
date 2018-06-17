@@ -7259,6 +7259,29 @@ footer {
       font-size: 3.2rem;
       text-align: center;
       color: #495057; }
+  .section-left-alphabet {
+    height: auto;
+    margin: 2rem 0 2rem 1.5rem; }
+    .section-left-alphabet-letter {
+      height: 3.5rem;
+      width: 3.5rem;
+      margin: 1rem 2rem 2rem 2rem;
+      position: relative; }
+      .section-left-alphabet-letter:hover {
+        transform: translate(1px, -1px);
+        box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+  .section-right-keyword {
+    margin: 1.1rem 2rem 0 2.5rem;
+    font-size: 1.4rem;
+    color: #adb5bd;
+    font-style: italic;
+    text-decoration: underline;
+    font-size: 2rem;
+    color: #6c757d; }
+    .section-right-keyword-letter {
+      margin: 2rem 0 0 2rem !important;
+      width: 6rem;
+      height: 6rem !important; }
 
 .form-check {
   padding-left: 0 !important;

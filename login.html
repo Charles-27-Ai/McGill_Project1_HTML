@@ -194,21 +194,21 @@
         <!-- login right part: 2 components -->
         <div class="d-flex flex-column section-right">
             <div class="section-right-profile">
-                <div class="d-flex flex-row justify-content-center">
+                <div class="d-flex flex-row justify-content-start">
                     <!-- profile photo-->
-                    <div class="section-right-profile-photo">
+                    <div class="d-flex flex-column section-right-profile-photo">
                         <img src="img/profile_sq.jpg" alt="profile photo" class="img-fluid">
-                        <form class="form-profile-photo">
-                            
+                        <!-- <form class="form-profile-photo">
                             <input type="file" class="form-control-file">
                             <small class="form-text text-muted">Max 3mb size</small>
-                        </form>
+                        </form> -->
+                        <button class="btn btn-profile-photo">Edit profile photo</button>
                     </div>
                     <!-- profile details-->
                     <div class="d-flex flex-column section-right-profile-detail">
-                        <div class="section-right-profile-title">
-                            <h1>My profile</h1>
-                        </div>
+                        
+                        <h1 class="section-right-profile-title">My Profile</h1>
+                        
                         <div class="d-flex flex-row">
                             <div class="form-profile-labels">
                                 <h4>User name</h4>
@@ -217,29 +217,20 @@
                                 <h4>Profession</h4>
                             </div>
                             <form class="form-profile-detail">
-
                                 <div class="form-group">
-                                    <input type="text" name="profileName" placeholder="Bob" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <input type="email" name="profileEmail" placeholder="bob.appleseed@apple.com" class="form-control">
-                                </div>
-
-                                <div class="d-flex flex-row form-profile-row">
-
-                                    <div class="form-group">
-                                        <input type="password" name="profilePassword" placeholder="Bob" class="form-control">
-                                    </div>
-                                    <p>reset password</p>
-                                </div>
-
-                                <div class="form-group">
-                                    <select class="form-control">
+                                    <input type="text" name="profileName" placeholder="Bob" class="form-control form-profile-detail-input">
+                                    <input type="email" name="profileEmail" placeholder="bob.appleseed@apple.com" class="form-control form-profile-detail-input">
+                                    <input type="password" name="profilePassword" placeholder="Bob" class="form-control form-profile-detail-input">
+                                    <select class="form-control form-profile-detail-input">
                                         <option>teacher</option>
                                         <!-- with sub-menus -->
                                         <option>student</option>
                                         <option>administrator</option>
                                     </select>
+                                    <div class="d-flex flex-row justify-content-between">
+                                        <button class="btn btn-profile" type="submit" name="profileSave">Edit</button>
+                                        <button class="btn btn-profile" type="submit" name="profileSave">Save</button>
+                                    </div>
                                 </div>
                             </form>
 
@@ -249,7 +240,48 @@
                 </div>
             </div>
             <div class="section-right-favourites">
-                fav
+                <div class="d-flex flex-column">
+                    <h1 class="section-right-favourites-title">My Favourites</h1>
+                    <table class="table table-striped section-right-favourites-table">
+                            <thead>
+                                <tr>
+                                    <th>Title of article</th>
+                                    <th>Key words</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <!-- <th scope="row">1</th> -->
+                                    
+                                    <td><a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</a></td>
+                                    <td>
+                                        <a href="#" class="section-right-favourites-table-keywords">Math</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">iOS</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">macOS</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">Middle School</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</a></td>
+                                    <td>
+                                        <a href="#" class="section-right-favourites-table-keywords">English</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">Chromebook</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">E-learning</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">France</a>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td><a href="#" class="section-right-favourites-table-title">Curabitur sagittis hendrerit ante. Proin in tellus sit amet nibh dignissim sagittis. Aliquam id dolor.</a></td>
+                                    <td>
+                                        <a href="#" class="section-right-favourites-table-keywords">P.E.</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">Community</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">Teamwork</a>
+                                        <a href="#" class="section-right-favourites-table-keywords">Motivation</a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                </div>
             </div>
         </div>
 
